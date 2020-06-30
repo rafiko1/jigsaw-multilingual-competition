@@ -2,6 +2,17 @@
 Tensorflow code, used with Kaggle TPUv3 instances by the 1st place winner for the [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). 
 Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). The code is part of the overall solution with another part leveraging similar [Pytorch models](https://github.com/leecming/jigsaw-multilingual) trained locally.
 
+### Recipe for training: 
+1. Bootstrap test-set predictions (pseudo-labels) for all languages using the 
+XLM-Roberta-Large multilingual model
+2. Train a monolingual/multilingual 
+model, and predict test-set samples in the relevant language(s)
+3. Blend predictions from the current model with the previous ensemble 
+predictions - update pseudo-labels 
+4. Repeat steps 2 and 3 with various pretrained monolingual and multilingual 
+models 
+5. Step 2 can be modified by adding pseudo-labels as training labels
+
 
 ### Code
 | Training | Comment |
