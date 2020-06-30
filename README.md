@@ -42,7 +42,7 @@ You can refer to the **Data and model files** section below for more info.
 
 | Language | Models |
 | -------- | ------ | 
-| All | xlm-roberta-large |
+| All | jplu/tf-xlm-roberta-large |
 | French | camembert-base, camembert/camembert-large, flaubert/flaubert_large_cased |
 | Italian | dbmdz/bert-base-italian-xxl-cased, dbmdz/bert-base-italian-xxl-uncased, m-polignano-uniba/bert_uncased_L-12_H-768_A-12_italian_alb3rt0 |
 | Portuguese | neuralmind/bert-large-portuguese-cased | 
