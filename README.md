@@ -4,7 +4,7 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 
 ### Recipe for training: 
 1. Bootstrap test-set predictions (pseudo-labels) for all languages using the 
-XLM-Roberta-Large multilingual model
+XLM-Roberta-Large multilingual model (XLM-R)
 2. Train a monolingual/multilingual 
 model, and predict test-set samples in the relevant language(s)
 3. Blend predictions from the current model with the previous ensemble 
