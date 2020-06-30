@@ -10,8 +10,7 @@ model, and predict test-set samples in the relevant language(s)
 3. Blend predictions from the current model with the previous ensemble 
 predictions - update pseudo-labels 
 4. Repeat steps 2 and 3 with various pretrained monolingual and multilingual 
-models 
-5. Step 2 can be modified by adding pseudo-labels as training labels
+models. Step 2 can also be modified by using pseudo-labels for training.
 
 
 ### Code
