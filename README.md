@@ -6,9 +6,9 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 ### Code
 | Training | Comment |
 | ----- | ------  |
-|[XLM-R template for es/it/tr](xlm-r-es-it-tr.ipynb) | monolingual XLM-R approach for languages with validation set |
-|[XLM-R template for pt/ru/fr](xlm-r-pt-ru-fr.ipynb) | monolingual XLM-R approach for languages without validation set |  
-|[XLM-R train-bias](xlm-r-train-bias.ipynb) | monolingual XLM-R approach on train-bias dataset using Spanish example |  
+|[Template for es/it/tr](xlm-r-es-it-tr.ipynb) | monolingual approach for languages with validation set. Default model: XLM-R |
+|[Template for pt/ru/fr](xlm-r-pt-ru-fr.ipynb) | monolingual approach for languages without validation set. Default model: XLM-R |  
+|[XLM-R train-bias](xlm-r-train-bias.ipynb) | monolingual XLM-R approach on train-bias dataset |  
 
 | Post-processing | Comment | 
 | -------------- | ------- |
