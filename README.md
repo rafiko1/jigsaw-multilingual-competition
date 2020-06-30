@@ -12,7 +12,7 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 
 | Post-processing | Comment | 
 | -------------- | ------- |
-| [Post-processing example](post-processing-example.py) | Post-processing technique using earlier Russian subs as example |
+| [Post-processing example](post-processing-example.ipynb) | Post-processing technique using earlier Russian subs as example |
 
 ### Data and model files
 1. HuggingFace models are downloaded directly via API so there is no need to manually download them.
