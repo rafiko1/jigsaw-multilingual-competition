@@ -12,11 +12,12 @@ predictions - update pseudo-labels
 4. Repeat steps 2 and 3 with various pretrained monolingual and multilingual 
 models.
 
-We provide 3 sets of sample pseudo-labels (scoring on public LB: 9372, 9500, 9537) for you to test training monolingual and multilingual models against (refer to the Data and model files section below).
-
 Relevant upgrades to training:
 1. Implementing pseudolabels togehter with train labels in step 2.
 2. As final result, use a post-processing technique to earlier constructed pseudolabels.
+
+We provide 3 sets of sample pseudo-labels (scoring on public LB: 9372, 9500, 9537) for you to test training monolingual and multilingual models against. 
+For post-processing, we also provide 11 earlier constructed pseudolabels where the Russian-related labels were modified.
 
 ### Code
 | Training | Comment |
@@ -32,6 +33,8 @@ Relevant upgrades to training:
 ### Data and model files
 1. HuggingFace models are downloaded directly via API so there is no need to manually download them.
 2. Translations of the Toxic 2018 dataset and pseudo-labels for public LB 9372, public LB 9500, public LB 9537 (used as sample inputs to training) can be found [here](https://www.kaggle.com/leecming/multilingual-toxic-comments-training-data).
+3. Translation of the Toxic 2019 Unintended bias dataset can be found [here](https://www.kaggle.com/rafiko1/translated-train-bias-all-langs)
+4. 
 
 ### Setup
 
