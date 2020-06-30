@@ -1,18 +1,10 @@
 ### Introduction
-PyTorch model code used by the 1st place winner for the  [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). 
-Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). This is "one-half" of the overall solution with the other half leveraging similar Tensorflow models trained on Kaggle TPUv3 instances.
+Tensorflow model code used through Kaggle TPUv3 instances by the 1st place winner for the  [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). 
+Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). This is only "one-half" of the overall solution with the other half leveraging similar Pytorch training models trained locally.
+
 
 ### Recipe for training: 
-1. Bootstrap test-set predictions (pseudo-labels) for all languages using the 
-XLM-Roberta-Large multilingual model
-2. Combine pseudo-labels with training data, train a monolingual/multilingual 
-model, and predict test-set samples in the relevant language(s)
-3. Blend predictions from the current model with the previous ensemble 
-predictions - update pseudo-labels 
-4. Repeat steps 2 and 3 with various pretrained monolingual and multilingual 
-models 
-
-We provide 3 sets of sample pseudo-labels (scoring on public LB: 9372, 9500, 9537) for you to test training monolingual and multilingual models against (refer to the Data and model files section below).
+1. 
 
 
 ### Code
@@ -96,10 +88,7 @@ To use the predictions as pseudo-labels for another model run, note that you'll 
 
 
 ### Notes
-1. The code and container environment were run on a fairly heavy-weight workstation (24C/48T Threadripper + 64GB RAM + 2x RTX Titans w/ 24GB GPU RAM each) and using mixed precision training + gradient accumulation. It may not be feasible to finetune larger models such as XLM-Roberta-Large on smaller-scale machines especially with entry-level Nvidia cards.
-You can adjust the BATCH_SIZE and ACCUM_FOR flags in classifier_baseline.py to fit in memory but it may impact model performance. 
-
-2. Below lists the various pretrained HuggingFace transformer models we used -
+1. Below lists the various pretrained HuggingFace transformer models we used -
 
 | Language | Models |
 | -------- | ------ | 
