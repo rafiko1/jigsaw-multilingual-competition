@@ -35,7 +35,7 @@ You can refer to the Data and model files section below for more info.
 1. HuggingFace models are downloaded directly via API so there is no need to manually download them.
 2. Translations of the Toxic 2018 dataset and pseudo-labels for public LB 9372, public LB 9500, public LB 9537 (used as sample inputs to training) can be found [here](https://www.kaggle.com/leecming/multilingual-toxic-comments-training-data).
 3. Translation of the Toxic 2019 Unintended bias dataset is found [here](https://www.kaggle.com/rafiko1/translated-train-bias-all-langs)
-4. For post-processing: 11 Russian-related pseudolabels [here](https://www.kaggle.com/rafiko1/ru-changed-subs)
+4. For post-processing: 11 Russian-specific updated pseudolabels [here](https://www.kaggle.com/rafiko1/ru-changed-subs)
 
 ### Setup
 
