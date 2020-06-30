@@ -10,8 +10,13 @@ model, and predict test-set samples in the relevant language(s)
 3. Blend predictions from the current model with the previous ensemble 
 predictions - update pseudo-labels 
 4. Repeat steps 2 and 3 with various pretrained monolingual and multilingual 
-models. Step 2 can also be modified by using pseudo-labels for training.
+models.
 
+We provide 3 sets of sample pseudo-labels (scoring on public LB: 9372, 9500, 9537) for you to test training monolingual and multilingual models against (refer to the Data and model files section below).
+
+Relevant upgrades to training:
+1. Implementing pseudolabels togehter with train labels in step 2.
+2. As final result, use a post-processing technique to earlier constructed pseudolabels.
 
 ### Code
 | Training | Comment |
@@ -26,8 +31,7 @@ models. Step 2 can also be modified by using pseudo-labels for training.
 
 ### Data and model files
 1. HuggingFace models are downloaded directly via API so there is no need to manually download them.
-2. FastText monolingual models can be downloaded [here](https://fasttext.cc/docs/en/crawl-vectors.html). Our model code uses bin model files (e.g., cc.es.300.bin).
-3. Translations of the Toxic 2018 dataset and pseudo-labels for public LB 9372, public LB 9500, public LB 9537 (used as sample inputs to training) can be found [here](https://www.kaggle.com/leecming/multilingual-toxic-comments-training-data).
+2. Translations of the Toxic 2018 dataset and pseudo-labels for public LB 9372, public LB 9500, public LB 9537 (used as sample inputs to training) can be found [here](https://www.kaggle.com/leecming/multilingual-toxic-comments-training-data).
 
 ### Setup
 
