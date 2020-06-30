@@ -1,8 +1,8 @@
 ### Introduction
-[Jigsaw Multilingual Toxic Comment Classification](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification) was the 3rd annual competition organized by the Jigsaw team. It followed [Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge), the original 2018 competition, and [Jigsaw Unintended Bias in Toxicity Classification](https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification). <br> 
-This year, the goal was to run multilingual toxicity predictions on six different languages (i.e. es, tr, it, ru, pt and fr), and promote the usage of TPU.
 
-The Tensorflow code here was implemented using Kaggle TPUv3 by the 1st place winner of the [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). 
+The Tensorflow code released here, was implemented using Kaggle TPUv3 by the 1st place winner of the [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). It was the 3rd annual competition organized by the Jigsaw team. It followed [Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge), the original 2018 competition, and [Jigsaw Unintended Bias in Toxicity Classification](https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification). <br> 
+The goal was to run multilingual toxicity predictions on six different languages (i.e. es, tr, it, ru, pt and fr), and promote the usage of TPU.
+
 Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). The code is part of the overall solution with another part leveraging similar [Pytorch models](https://github.com/leecming/jigsaw-multilingual) trained locally.
 
 ### Recipe for training: 
