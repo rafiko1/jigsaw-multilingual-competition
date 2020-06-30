@@ -1,6 +1,6 @@
 ### Introduction
-Tensorflow code used with Kaggle TPUv3 instances by the 1st place winner for the [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). 
-Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). This is only "one-half" of the overall solution with the other half leveraging similar [Pytorch training models](https://github.com/leecming/jigsaw-multilingual) trained locally
+Tensorflow code, used with Kaggle TPUv3 instances by the 1st place winner for the [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). 
+Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). The code is part of the overall solution with another part leveraging similar [Pytorch training models](https://github.com/leecming/jigsaw-multilingual) trained locally.
 
 
 ### Recipe for training: 
@@ -10,8 +10,8 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 ### Code
 | Model | Comment |
 | ----- | ------  |
-|[FastText BiGRU](classifier_bigru_fasttext_tf.py) | monolingual RNN approach using non-contextualized FastText embeddings |
-|[HuggingFace Transformer](classifier_baseline.py) | mono/multilingual Transformer approach |  
+|[XLM-R template for es/it/tr](xlm-r-es-it-tr.ipynb) | monolingual XLM-R approach for languages with validation set |
+|[XLM-R template for pt/ru/fr](xlm-r-pt-ru-fr) | monolingual XLM-R approach for languages without validation set |  
 
 | Helper modules | Comment | 
 | -------------- | ------- |
