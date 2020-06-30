@@ -8,14 +8,11 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 | ----- | ------  |
 |[XLM-R template for es/it/tr](xlm-r-es-it-tr.ipynb) | monolingual XLM-R approach for languages with validation set |
 |[XLM-R template for pt/ru/fr](xlm-r-pt-ru-fr.ipynb) | monolingual XLM-R approach for languages without validation set |  
-|[XLM-R template train-bias](xlm-r-train-bias.ipynb) | monolingual XLM-R approach on train-bias dataset using Spanish example|  
+|[XLM-R template train-bias](xlm-r-train-bias.ipynb) | monolingual XLM-R approach on train-bias dataset using Spanish example |  
 
-| Helper modules | Comment | 
+| Inference | Comment | 
 | -------------- | ------- |
-| [prepare_data](prepare_data.py) | Generates the prerequisite train/test/validation data necessary for training |
-| [prepare_predictions](prepare_predictions.py) | Blends current run predictions with the previous ensemble |
-| [preprocessor](preprocessor.py)| Includes helper functions to extract raw strings and labels from training CSVs |
-| [postprocessor](postprocessor.py)| Includes helper functions to ensemble multiple CSV predictions |
+| [Post-processing example](post-processing-example.py) | Post-processing technique using older subs with Russian example |
 
 ### Data and model files
 1. HuggingFace models are downloaded directly via API so there is no need to manually download them.
