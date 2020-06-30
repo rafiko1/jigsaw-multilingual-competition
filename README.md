@@ -3,15 +3,11 @@ Tensorflow code, used with Kaggle TPUv3 instances by the 1st place winner for th
 Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). The code is part of the overall solution with another part leveraging similar [Pytorch training models](https://github.com/leecming/jigsaw-multilingual) trained locally.
 
 
-### Recipe for training: 
-1. 
-
-
 ### Code
 | Training | Comment |
 | ----- | ------  |
 |[XLM-R template for es/it/tr](xlm-r-es-it-tr.ipynb) | monolingual XLM-R approach for languages with validation set |
-|[XLM-R template for pt/ru/fr](xlm-r-pt-ru-fr) | monolingual XLM-R approach for languages without validation set |  
+|[XLM-R template for pt/ru/fr](xlm-r-pt-ru-fr.ipynb) | monolingual XLM-R approach for languages without validation set |  
 
 | Helper modules | Comment | 
 | -------------- | ------- |
@@ -26,21 +22,6 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 3. Translations of the Toxic 2018 dataset and pseudo-labels for public LB 9372, public LB 9500, public LB 9537 (used as sample inputs to training) can be found [here](https://www.kaggle.com/leecming/multilingual-toxic-comments-training-data).
 
 ### Setup
-1. A [DockerFile](Dockerfile) is provided which builds against an Nvidia-provided Docker image, and installs the necessary Nvidia, system, and Python prerequisites - IMPORTANT: the Dockerfile installs an SSH server in-container with a default password (root/testdocker). 
-2. Sample Docker build and run invocation: docker build -t jigsaw-multi .
-&& docker run
--p 8888:22 -p 8889:8888
--v /home/leecming/PycharmProjects/jigsaw-multilingual/data:/root/data
--v /home/leecming/PycharmProjects/jigsaw-multilingual/models:/root/models
--v /home/leecming/PycharmProjects/jigsaw-multilingual/notebooks:/root/notebooks
---name jigsaw-multi
-jigsaw-multi 
-3. Various functions ingest and generate files - it is suggested that you mount them within container volumes to allow for smooth movement of files in & out of the container
-4. With an SSH server and Jupyter notebook server within the container - it is suggested that you bind ports to enable external connections
-5. Training I/O configuration: update [SETTINGS.json](SETTINGS.json) to point to locations of the 2018 training CSV, pseudo-labels CSV, and various other relevant paths.
-6. To configure which languages to generate training data for, update the LANG_LIST global variable in [prepare_data.py](prepare_data.py) (accepts 1 or more of the 6 test-set languages in ISO code)
-7. For Transformer model settings (including which pretrained model to use), update the global variables in [classifier_base.py](classifier_baseline.py)
-8. For FastText classifier model settings (including which language model to use), update the global variables in [classifier_bigru_fasttext_tf.py](classifier_bigru_fasttext_tf.py)
 
 
 ### Example 1: Running a spanish monolingual Transformer model using public LB 9500 pseudo-labels 
