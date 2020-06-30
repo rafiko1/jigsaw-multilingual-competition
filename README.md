@@ -8,7 +8,7 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 | ----- | ------  |
 |[Template for es/it/tr](xlm-r-es-it-tr.ipynb) | monolingual approach for languages with validation set. Default model: XLM-R |
 |[Template for pt/ru/fr](xlm-r-pt-ru-fr.ipynb) | monolingual approach for languages without validation set. Default model: XLM-R |  
-|[Template train-bias dataset](xlm-r-train-bias.ipynb) | monolingual approach on train-bias dataset. Default model: XLM-R |  
+|[Template for train-bias dataset](xlm-r-train-bias.ipynb) | monolingual approach for train-bias dataset. Default model: XLM-R |  
 
 | Post-processing | Comment | 
 | -------------- | ------- |
