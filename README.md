@@ -29,7 +29,7 @@ You can refer to the **Data and model files** section below for more info.
 
 | Post-processing | Comment | 
 | -------------- | ------- |
-| [Post-processing example](post-processing-example.ipynb) | Post-processing technique using Russian pseudolabels as example |
+| [Post-processing example](post-processing-example.ipynb) | Post-processing technique using Russian-specific pseudolabels as example |
 
 ### Data and model files
 1. HuggingFace models are downloaded directly via API so there is no need to manually download them.
