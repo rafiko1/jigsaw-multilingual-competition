@@ -10,7 +10,7 @@ Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/ji
 |[XLM-R template for pt/ru/fr](xlm-r-pt-ru-fr.ipynb) | monolingual XLM-R approach for languages without validation set |  
 |[XLM-R template train-bias](xlm-r-train-bias.ipynb) | monolingual XLM-R approach on train-bias dataset using Spanish example |  
 
-| Inference | Comment | 
+| Post-processing | Comment | 
 | -------------- | ------- |
 | [Post-processing example](post-processing-example.py) | Post-processing technique using older subs with Russian example |
 
