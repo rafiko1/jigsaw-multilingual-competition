@@ -1,6 +1,6 @@
 ### Introduction
 Tensorflow code, used with Kaggle TPUv3 instances by the 1st place winner for the [2020 Jigsaw Multilingual Kaggle competition](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification). 
-Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). The code is part of the overall solution with another part leveraging similar [Pytorch training models](https://github.com/leecming/jigsaw-multilingual) trained locally.
+Our solution is detailed in this [Kaggle forum post](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/discussion/160862). The code is part of the overall solution with another part leveraging similar [Pytorch models](https://github.com/leecming/jigsaw-multilingual) trained locally.
 
 
 ### Code
