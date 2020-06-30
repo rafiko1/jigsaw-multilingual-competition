@@ -13,8 +13,8 @@ predictions - update pseudo-labels
 models.
 
 Relevant upgrades to training:
-1. Implementing pseudolabels togehter with train labels in step 2
-2. As final result, use a post-processing technique
+1. Implement pseudolabels togehter with train labels in step 2
+2. Use a post-processing technique
 
 We provide 3 sets of sample pseudo-labels (scoring on public LB: 9372, 9500, 9537) for you to test training monolingual and multilingual models against. <br>
 For post-processing, we also provide 11 pseudolabels where subsequent Russian labels were updated after training. <br>
