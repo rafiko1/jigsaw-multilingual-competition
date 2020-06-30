@@ -18,7 +18,7 @@ Relevant upgrades to training:
 
 We provide 3 sets of sample pseudo-labels (scoring on public LB: 9372, 9500, 9537) for you to test training monolingual and multilingual models against. <br>
 For post-processing, we also provide 11 pseudolabels where subsequent Russian labels were updated after training. <br>
-You can refer to the Data and model files section below for more info. 
+You can refer to the *Data and model files* section below for more info. 
 
 ### Code
 | Training | Comment |
