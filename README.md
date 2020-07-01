@@ -23,6 +23,10 @@ We provide 3 sets of sample pseudo-labels (scoring on public LB: 9372, 9500, 953
 For post-processing, we also provide 11 pseudolabels where subsequent Russian labels were updated after training. <br>
 You can refer to the **Data and model files** section below for more info. 
 
+### Getting started
+Training a XLM-R Spanish baseline [here](https://www.kaggle.com/rafiko1/1st-place-baseline-xlm-r-es-it-tr)
+Make use of the post-processing technique [here](https://www.kaggle.com/rafiko1/1st-place-jigsaw-post-processing-example)
+
 ### Code
 | Training | Comment |
 | ----- | ------  |
